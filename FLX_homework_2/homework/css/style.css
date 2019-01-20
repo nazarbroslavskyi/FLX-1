@@ -116,7 +116,8 @@ body .padding-medium li a:visited {
   text-decoration: underline;
 }
 body .padding-medium li a:hover {
-  text-decoration: none;
+  text-decoration: underline double;
+  color: #87cefa;
 }
 body .padding-medium li a.text::after {
   content: "New";
@@ -126,6 +127,9 @@ body .padding-medium li a.text::after {
 }
 body .blocks .tm-content-box p:first-letter {
   color: #000;
+}
+.box-work {
+  padding: 8px;
 }
 body .blocks .tm-content-box ul li:nth-child(even) {
   background-color: #f1f1f1;
