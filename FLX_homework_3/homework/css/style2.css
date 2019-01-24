@@ -10,8 +10,7 @@ body {
 
 main {
   max-width: 960px;
-  margin: 0 auto;
-  font-size: 0.6923076923; }
+  margin: 0 auto; }
 
 header {
   background: url(../img/header_background_v2.jpg) no-repeat;
