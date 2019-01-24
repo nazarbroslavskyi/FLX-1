@@ -1,0 +1,213 @@
+@mixin buttonStyle ($txtColor, $size) {
+  padding: 1% $size 1% $size;
+  text-transform: uppercase;
+  background-color: $btnColor;
+  border: 2px solid $btnColor;
+  color: $txtColor;
+  &:hover {
+    background-color: lighten($btnColor, 10%);
+    border: 2px solid #000;
+    transition-delay: 0.2s;
+    cursor: pointer;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+}
+
+body {
+  background-color: $mainBGC;
+  max-width: 1366px;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: $fontSize;
+}
+header {
+  background: $headerBGC no-repeat;  
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px 0px 0px;
+
+    h1 {
+      color: $menuColor;
+      text-transform: uppercase;
+    }
+
+    a {
+      margin-top: 20px;
+      text-decoration: none;
+      border: 2px solid $btnColor;
+      @include buttonStyle(#fff, 5%);
+    }
+    
+  }
+}  
+.top-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .logo img {
+    height: 100px;
+  }
+
+  nav {
+    width: (100vw * 0.55);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 10px;
+
+    a {
+      color: $menuColor;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-right: 2px solid $borderColor;
+      height: 30px;
+      padding: 15px 10% 20px 10% ; 
+      &:last-child {
+        border: none;
+      }
+      &:hover {
+        transition-delay: 0.2s;
+        color: rgb(179, 41, 144)
+      }
+    }
+
+  }
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+
+  input {
+    width: 200px;
+    height: 35px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid $borderColor;
+  }
+}
+
+.post-list {
+  h1 {
+    text-align: right;
+    color: $postMainColor;
+    padding-top: 1.5%;
+  }
+  article {
+    display: flex;
+    background-color: $articleBGC;
+    margin-bottom: 20px;
+    img {
+      padding: 1.5%;
+    }
+
+    &>div {
+      display: flex;
+      flex-direction: column;
+
+      .btn {
+        align-self: flex-end;
+        margin-top: 15%;
+        margin-bottom: 1%;
+        margin-right: 3%;
+        border: 2px solid $btnColor;
+        @include buttonStyle(#fff, 7%);
+      }
+    }
+  }
+}
+.post {
+  .post-description {
+    margin: 4% 2% 1% 0;
+    padding-bottom: 2%;
+    color: $postDescColor;
+    font-weight: bold;
+    border-bottom: 2px solid $borderColor;
+  }
+  h3 {
+    color: $postHeaderColor;
+    text-transform: uppercase;
+  }
+  p {
+    padding-top: 2%;
+    color: $postMainColor;
+    line-height: 1.3em;
+  }
+}
+
+#about {
+  h1 {
+    text-align: right;
+    text-transform: uppercase;
+    color:$postMainColor;
+    margin-top:50px;
+  }
+  p {
+    line-height: 1.6em;
+    margin-bottom: 3%;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.contact-form {
+  h4 {
+    text-transform: uppercase;
+  }
+  h1, h4 {
+    text-align: right;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    label {
+      display: block;
+      text-align: right;
+      margin-top: 2%;
+      color: $aboutColor;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 2%;
+      background-color: transparent;
+      border: 1px solid $borderColor;
+    }
+    fieldset {
+      border: none;
+
+    }      
+    .email-input {
+      margin-left: 5px;
+    }
+    .inputs {
+      display: inline-block;
+      width: 475px;
+    }
+    .btn {
+      @include buttonStyle(#fff, 7%);
+      align-self: flex-end;
+      margin: 3% 0 5% 0;
+    }
+  }
+}
+footer {
+  color: $postMainColor;
+  padding:0 0 1% 1%;
+}

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif; }
+
+body {
+  background-color: #fff;
+  max-width: 1366px; }
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 0.625; }
+
+header {
+  background: url(../img/header_background_v1.jpg) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover; }
+  header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px 0px 0px; }
+    header section h1 {
+      color: #fff;
+      text-transform: uppercase; }
+    header section a {
+      margin-top: 20px;
+      text-decoration: none;
+      border: 2px solid #29b8ac;
+      padding: 1% 5% 1% 5%;
+      text-transform: uppercase;
+      background-color: #29b8ac;
+      border: 2px solid #29b8ac;
+      color: #fff; }
+      header section a:hover {
+        background-color: #40d4c8;
+        border: 2px solid #000;
+        transition-delay: 0.2s;
+        cursor: pointer; }
+
+.top-wrapper {
+  display: flex;
+  justify-content: space-between; }
+  .top-wrapper .logo img {
+    height: 100px; }
+  .top-wrapper nav {
+    width: 55vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 10px; }
+    .top-wrapper nav a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-right: 2px solid gray;
+      height: 30px;
+      padding: 15px 10% 20px 10%; }
+      .top-wrapper nav a:last-child {
+        border: none; }
+      .top-wrapper nav a:hover {
+        transition-delay: 0.2s;
+        color: #b32990; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px; }
+  .toolbar input {
+    width: 200px;
+    height: 35px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid gray; }
+
+.post-list h1 {
+  text-align: right;
+  color: #000;
+  padding-top: 1.5%; }
+.post-list article {
+  display: flex;
+  background-color: #dbd8d8;
+  margin-bottom: 20px; }
+  .post-list article img {
+    padding: 1.5%; }
+  .post-list article > div {
+    display: flex;
+    flex-direction: column; }
+    .post-list article > div .btn {
+      align-self: flex-end;
+      margin-top: 15%;
+      margin-bottom: 1%;
+      margin-right: 3%;
+      border: 2px solid #29b8ac;
+      padding: 1% 7% 1% 7%;
+      text-transform: uppercase;
+      background-color: #29b8ac;
+      border: 2px solid #29b8ac;
+      color: #fff; }
+      .post-list article > div .btn:hover {
+        background-color: #40d4c8;
+        border: 2px solid #000;
+        transition-delay: 0.2s;
+        cursor: pointer; }
+
+.post .post-description {
+  margin: 4% 2% 1% 0;
+  padding-bottom: 2%;
+  color: #df1c1c;
+  font-weight: bold;
+  border-bottom: 2px solid gray; }
+.post h3 {
+  color: #29b8ac;
+  text-transform: uppercase; }
+.post p {
+  padding-top: 2%;
+  color: #000;
+  line-height: 1.3em; }
+
+#about h1 {
+  text-align: right;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 50px; }
+#about p {
+  line-height: 1.6em;
+  margin-bottom: 3%; }
+#about img {
+  max-width: 100%; }
+
+.contact-form h4 {
+  text-transform: uppercase; }
+.contact-form h1, .contact-form h4 {
+  text-align: right; }
+.contact-form form {
+  display: flex;
+  flex-direction: column; }
+  .contact-form form label {
+    display: block;
+    text-align: right;
+    margin-top: 2%;
+    color: #29b8ac; }
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: 2%;
+    background-color: transparent;
+    border: 1px solid gray; }
+  .contact-form form fieldset {
+    border: none; }
+  .contact-form form .email-input {
+    margin-left: 5px; }
+  .contact-form form .inputs {
+    display: inline-block;
+    width: 475px; }
+  .contact-form form .btn {
+    padding: 1% 7% 1% 7%;
+    text-transform: uppercase;
+    background-color: #29b8ac;
+    border: 2px solid #29b8ac;
+    color: #fff;
+    align-self: flex-end;
+    margin: 3% 0 5% 0; }
+    .contact-form form .btn:hover {
+      background-color: #40d4c8;
+      border: 2px solid #000;
+      transition-delay: 0.2s;
+      cursor: pointer; }
+
+footer {
+  color: #000;
+  padding: 0 0 1% 1%; }
+
+/*# sourceMappingURL=style1.css.map */
