@@ -59,9 +59,10 @@ function playGame() {
     } else if (currentAttempt === config.totalAttempts) {
       alert(`Thank you for a game. Your prize is: ${gameSettings.totalPrize}$`);
       playAgain = confirm('Do you want to play again?');
-      gameSettings.maxRangeValue = 5;
-      gameSettings.prize = 10;
-      gameSettings.totalPrize = 0;
+      /**
+       * I do not understand in task rules if I need to reset 
+       * the data here { prize: 10,maxRangeValue: 5,totalPrize: 0} .
+       */
     }
   }
   } while (playAgain);
