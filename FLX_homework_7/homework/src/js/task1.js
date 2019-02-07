@@ -1,18 +1,16 @@
 const login = prompt('Enter your login');
 
-const greetings = name => {
-  alert(new Date().getHours() < 20 
-  ? `Good day, dear ${name}!` 
-  : `Good evening, dear ${name}`);
-}
-
 if (login === 'User' || login === 'Admin') {
   const password = prompt('Enter your password');
 
   if (password === 'UserPass') {
-    greetings('User');
+    alert(new Date().getHours() < 20 
+    ? 'Good day, dear User!'
+    : 'Good evening, dear dear User!');
   } else if (password === 'RootPass') {
-    greetings('Admin');
+    alert(new Date().getHours() < 20 
+    ? 'Good day, dear Admin!'
+    : 'Good evening, dear dear Admin!');
   } else if (password === '' || password === null) {
     alert('Canceled.');
   } else {
