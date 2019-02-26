@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework 12 - Simple TODO List</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!--Index page-->
+      <div id="index">
+        <div class="index-inner">
+          <h1>Simple TODO Application</h1>
+          <p id="index-notification">TODO is empty</p>
+          <div class="index-control">
+            <div class="index-button">
+              <button class="button" id="addButton" onclick="switchPage('add')">
+                Add New Task
+              </button>
+            </div>
+            <ul id="taskList">
+              <li id="item_template" style="display: none">
+                <input
+                  class="checkbox"
+                  type="image"
+                  alt="checkbox"
+                  src="assets/img/todo-s.png"
+                  onclick="checkItem(event.target)"
+                />
+                <label onclick="modifyItem(this)">sometask</label>
+                <input
+                  id="delete"
+                  class="delete"
+                  type="image"
+                  alt="remove"
+                  src="assets/img/remove-s.jpg"
+                  onclick="deleteNode(event.target)"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Add page-->
+      <div id="add">
+        <div class="add-inner">
+          <h1>Add Task</h1>
+          <div class="add-input">
+            <input type="text" id="addInput" class="task-input" autofocus/>
+          </div>
+          <div class="add-control">
+            <button class="button cancel" onclick="switchPage('index')">
+              Cancel
+            </button>
+            <button class="button save" onclick="addTask()">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--modify page-->
+      <div id="modify">
+        <div class="modify-inner">
+          <h1>Modify item</h1>
+          <div class="modify-input">
+            <input type="text" id="editInput" class="task-input"/>
+          </div>
+          <div class="modify-control">
+            <button class="button cancel" onclick="switchPage('index')">
+              Cancel
+            </button>
+            <button class="button save" onclick="modifyTask()">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>

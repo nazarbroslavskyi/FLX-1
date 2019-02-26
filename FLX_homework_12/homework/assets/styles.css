@@ -1,0 +1,44 @@
+#index, index-control, #add, #modify, .add-input, .add-control, .modify-input, .modify-control, .index-button {  display: flex;
+  justify-content: center;
+}
+#index-notification {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.index-inner, .add-inner, .modify-inner {
+  width: 33.3%;
+}
+#index-notification, h1 {
+  text-align: center;
+}
+.task-input {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 8px 5px;
+}
+#add, #modify {
+  display: none;
+}
+
+button {
+  background-color: #dcdddd;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 3px;
+}
+button:hover {
+  transition-delay: .2s;
+  background-color: rgb(146, 146, 146);
+  color:rgb(207, 200, 200);
+}
+#taskList {
+  padding: 0;
+}
+#taskList li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
