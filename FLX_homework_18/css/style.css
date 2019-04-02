@@ -1,0 +1,127 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+input.editInput:disabled,
+button.saveBtn:disabled {
+  background-color: transparent;
+  border: none;
+  color: transparent;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+.avatar img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+.userProfile__card {
+  border: 2px solid rgb(155, 109, 66);
+  padding: 5px;
+  width: 90%;
+  display: flex;
+}
+.cardsDescription {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  padding: 1%;
+  width: 65rem;
+}
+
+.cards__header {
+  font-size: 1.2rem;
+}
+.cards__header p {
+  margin-bottom: 1rem;
+}
+.cardsDescription a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: rgb(132, 0, 255);
+}
+.cards__header p::first-letter {
+  text-transform: uppercase;
+  color: rgb(132, 0, 255);
+  font-weight: bold;
+}
+.btnSection {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  flex-grow: 1;
+  padding: 5px;
+}
+.editSection {
+  flex-grow: 2;
+}
+.editInput {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.btnSection button {
+  background-color: rgb(49, 134, 49);
+  font-size: 1.2rem;
+  border: unset;
+  cursor: pointer;
+}
+button.deleteBtn {
+  background-color: rgb(236, 34, 19);
+}
+/*--------------------------------------------------------------MODAL WINDOW-----------------------------------------------------------*/
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.postsHeader {
+  text-align: center;
+  color: rgb(119, 0, 255);
+}
+.post {
+  padding: 2rem 1rem 2rem 1rem; 
+}
+.post__title,
+.post__body,
+.post__comments {
+  padding: 1rem 0 1rem 1rem;
+  color: rgb(34, 119, 158);
+  font-size: 1.4rem;
+}
+.post::first-letter {
+  text-transform: uppercase;
+}
